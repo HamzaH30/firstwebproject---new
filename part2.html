@@ -21,7 +21,8 @@
   <p>Below is a video about how to do grocery shopping.</p>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/YHVyS7TCceQ" title="YouTube video player"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
+    allowfullscreen>
+  </iframe>
 
   <h2>Grocery List</h2>
   <ul>
@@ -48,7 +49,7 @@
   <dl>
     <dt>Naan</dt>
     <dd>
-      Naan is a leavened, oven-baked or tawa-fried flatbread which is found in the cuisines mainly of 
+      Naan is a leavened, oven-baked or tawa-fried flatbread which is found in the cuisines mainly of
       Western Asia, Central Asia, Indian subcontinent, Indonesia, Myanmar, and the Caribbean.
     </dd>
   </dl>
@@ -76,6 +77,89 @@
       <td>$7.86</td>
     </tr>
   </table>
+
+  <h2>Your Grocery List!</h2>
+  <p>Please complete the form below to send me your grocery list.</p>
+  <form name="user-grocery-list" id="grocery-list" method="get">
+
+    <fieldset form="grocery-list" name="contact-info">
+      <legend>
+        Your contact information
+      </legend>
+      <label for="name">Full Name (ex: John Doe) [required]:</label>
+      <input type="text" name="name" id="name" required />
+
+      <br />
+
+      <label for="email">Your email (ex: johndoe@gmail.com):</label>
+      <input type="email" name="email" id="email" />
+
+      <br />
+
+      <label for="phoneNumber">Your Phone Number (ex: 1-234-567-890) [required]:</label>
+      <input type="tel" name="phone_number" id="phoneNumber" minlength="9" maxlength="12" required />
+
+      <br />
+
+      <label for="age">Age (1 - 120) [required]:</label>
+      <input type="number" name="age" id="age" min="1" max="120" required />
+    </fieldset>
+
+    <fieldset form="grocery-list" name="grocery items">
+      <legend>
+        Your grocery list!
+      </legend>
+
+      <label for="store">Select which store you'd like me to go to.</label>
+      <input type="radio" name="store" id="store" value="Walmart" />
+      <input type="radio" name="store" id="store" value="Sobeys" />
+      <input type="radio" name="store" id="store" value="Superstore" />
+      <input type="radio" name="store" id="store" value="Safeway" />
+
+      <br />
+
+      <label for="essential-grocery-items">Select which of the followign essential grocery items you need.</label>
+      <input type="checkbox" name="Essential grocery items." id="essential-grocery-items" value="Milk" />
+      <input type="checkbox" name="Essential grocery items." id="essential-grocery-items" value="Eggs" />
+      <input type="checkbox" name="Essential grocery items." id="essential-grocery-items" value="Butter" />
+
+    </fieldset>
+
+    <input type="submit">
+  
+  </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
