@@ -11,9 +11,9 @@
 <body>
   <p>Navigation:</p>
   <ol>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="part1.html">Part 1</a></li>
-    <a href="images/PTEC logo.png">image</a>
+    <a href="index.html"><li>Home</li></a>
+    <a href="part1.html"><li>Part 1</li></a>
+    <a href="images/PTEC logo.png"><li>image</li></a>
   </ol>
 
   <h1>Grocery Trip!</h1>
@@ -105,23 +105,30 @@
       <input type="number" name="age" id="age" min="1" max="120" required />
     </fieldset>
 
-    <fieldset form="grocery-list" name="grocery items">
+    <fieldset form="grocery-list" name="grocery-items">
       <legend>
         Your grocery list!
       </legend>
 
       <label for="store">Select which store you'd like me to go to.</label>
-      <input type="radio" name="store" id="store" value="Walmart" />
-      <input type="radio" name="store" id="store" value="Sobeys" />
-      <input type="radio" name="store" id="store" value="Superstore" />
-      <input type="radio" name="store" id="store" value="Safeway" />
+      <label for="walmart">Walmart</label>
+      <input type="radio" name="store" id="walmart" value="walmart" />
+      <label for="sobeys">Sobeys</label>
+      <input type="radio" name="store" id="sobeys" value="sobeys" />
+      <label for="superstore">Superstore</label>
+      <input type="radio" name="store" id="superstore" value="superstore" />
+      <label for="safeway">Safeway</label>
+      <input type="radio" name="store" id="safeway" value="safeway" />
 
       <br />
 
       <label for="essential-grocery-items">Select which of the followign essential grocery items you need.</label>
-      <input type="checkbox" name="Essential grocery items." id="essential-grocery-items" value="Milk" />
-      <input type="checkbox" name="Essential grocery items." id="essential-grocery-items" value="Eggs" />
-      <input type="checkbox" name="Essential grocery items." id="essential-grocery-items" value="Butter" />
+      <label for="milk">Milk</label>
+      <input type="checkbox" name="milk" id="milk" value="Milk" />
+      <label for="eggs">Eggs</label>
+      <input type="checkbox" name="eggs" id="eggs" value="Eggs" />
+      <label for="butter">Butter</label>
+      <input type="checkbox" name="butter" id="butter" value="Butter" />
 
     </fieldset>
 
