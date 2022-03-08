@@ -9,181 +9,167 @@
 
   <body>
     <header>
-      <p>Navigation:</p>
-      <ol>
-        <a href="index.html"><li>Home</li></a>
-        <a href="part1.html"><li>Part 1</li></a>
-        <a href="images/PTEC logo.png"><li>image</li></a>
-      </ol>
+      <nav>
+        <p>Navigation:</p>
+        <ol>
+          <a href="index.html"><li>Home</li></a>
+          <a href="part1.html"><li>Part 1</li></a>
+          <a href="images/PTEC logo.png"><li>image</li></a>
+        </ol>
+      </nav>
     </header>
-    <hr />
     <main>
       <section>
         <h1>Grocery Trip!</h1>
-        <article>
-          <p>Below is a video about how to do grocery shopping.</p>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/YHVyS7TCceQ"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          >
-          </iframe>
-        </article>
+        <p>Below is a video about how to do grocery shopping.</p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/YHVyS7TCceQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
       </section>
-      <hr />
       <section>
         <h2>Grocery List</h2>
-        <article>
+        <ul>
+          <li>Milk</li>
+          <li>Eggs</li>
+          <li>Flour</li>
+          <li>Juice</li>
           <ul>
-            <li>Milk</li>
-            <li>Eggs</li>
-            <li>Flour</li>
-            <li>Juice</li>
+            <li>Apple Juice</li>
+            <li>Orange Juice</li>
             <ul>
-              <li>Apple Juice</li>
-              <li>Orange Juice</li>
-              <ul>
-                <li>Tropicana</li>
-              </ul>
+              <li>Tropicana</li>
             </ul>
-            <li>Naan</li>
-            <ol>
-              <li>Garlic Naan</li>
-              <li>Plain Naan</li>
-              <li>Cheese Naan</li>
-            </ol>
           </ul>
-        </article>
+          <li>Naan</li>
+          <ol>
+            <li>Garlic Naan</li>
+            <li>Plain Naan</li>
+            <li>Cheese Naan</li>
+          </ol>
+        </ul>
       </section>
-      <hr />
       <section>
         <h2>Definitions</h2>
-        <article>
-          <dl>
-            <dt>Naan</dt>
-            <dd>
-              Naan is a leavened, oven-baked or tawa-fried flatbread which is
-              found in the cuisines mainly of Western Asia, Central Asia, Indian
-              subcontinent, Indonesia, Myanmar, and the Caribbean.
-            </dd>
-          </dl>
-        </article>
+        <dl>
+          <dt>Naan</dt>
+          <dd>
+            Naan is a leavened, oven-baked or tawa-fried flatbread which is
+            found in the cuisines mainly of Western Asia, Central Asia, Indian
+            subcontinent, Indonesia, Myanmar, and the Caribbean.
+          </dd>
+        </dl>
       </section>
-      <hr />
       <section>
         <h2>Grocery Table</h2>
-        <article>
-          <table>
-            <tr>
-              <th>Item</th>
-              <th>Store</th>
-              <th>Cost</th>
-            </tr>
-            <tr>
-              <td>Milk</td>
-              <td>Sobeys</td>
-              <td>$5.99</td>
-            </tr>
-            <tr>
-              <td>Eggs</td>
-              <td>Walmart</td>
-              <td>$3.07</td>
-            </tr>
-            <tr>
-              <td>Flour</td>
-              <td>Superstore</td>
-              <td>$7.86</td>
-            </tr>
-          </table>
-        </article>
+        <table>
+          <tr>
+            <th>Item</th>
+            <th>Store</th>
+            <th>Cost</th>
+          </tr>
+          <tr>
+            <td>Milk</td>
+            <td>Sobeys</td>
+            <td>$5.99</td>
+          </tr>
+          <tr>
+            <td>Eggs</td>
+            <td>Walmart</td>
+            <td>$3.07</td>
+          </tr>
+          <tr>
+            <td>Flour</td>
+            <td>Superstore</td>
+            <td>$7.86</td>
+          </tr>
+        </table>
       </section>
-      <hr />
       <section>
         <h2>Your Grocery List!</h2>
-        <article>
-          <p>Please complete the form below to send me your grocery list.</p>
-          <form name="user-grocery-list" id="grocery-list" method="get">
-            <fieldset form="grocery-list" name="contact-info">
-              <legend>Your contact information</legend>
-              <label for="name">Full Name (ex: John Doe) [required]:</label>
-              <input type="text" name="name" id="name" required />
+        <p>Please complete the form below to send me your grocery list.</p>
+        <form name="user-grocery-list" id="grocery-list" method="get">
+          <fieldset form="grocery-list" name="contact-info">
+            <legend>Your contact information</legend>
+            <label for="name">Full Name (ex: John Doe) [required]:</label>
+            <input type="text" name="name" id="name" required />
 
-              <br />
+            <br />
 
-              <label for="email">Your email (ex: johndoe@gmail.com):</label>
-              <input type="email" name="email" id="email" />
+            <label for="email">Your email (ex: johndoe@gmail.com):</label>
+            <input type="email" name="email" id="email" />
 
-              <br />
+            <br />
 
-              <label for="phoneNumber"
-                >Your Phone Number (ex: 1-234-567-890) [required]:</label
-              >
-              <input
-                type="tel"
-                name="phone_number"
-                id="phoneNumber"
-                minlength="9"
-                maxlength="12"
-                required
-              />
+            <label for="phoneNumber"
+              >Your Phone Number (ex: 1-234-567-890) [required]:</label
+            >
+            <input
+              type="tel"
+              name="phone_number"
+              id="phoneNumber"
+              minlength="9"
+              maxlength="12"
+              required
+            />
 
-              <br />
+            <br />
 
-              <label for="age">Age (1 - 120) [required]:</label>
-              <input
-                type="number"
-                name="age"
-                id="age"
-                min="1"
-                max="120"
-                required
-              />
-            </fieldset>
+            <label for="age">Age (1 - 120) [required]:</label>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              min="1"
+              max="120"
+              required
+            />
+          </fieldset>
 
-            <fieldset form="grocery-list" name="grocery-items">
-              <legend>Your grocery list!</legend>
+          <fieldset form="grocery-list" name="grocery-items">
+            <legend>Your grocery list!</legend>
 
-              <label for="store"
-                >Select which store you'd like me to go to.</label
-              >
-              <label for="walmart">Walmart</label>
-              <input type="radio" name="store" id="walmart" value="walmart" />
-              <label for="sobeys">Sobeys</label>
-              <input type="radio" name="store" id="sobeys" value="sobeys" />
-              <label for="superstore">Superstore</label>
-              <input
-                type="radio"
-                name="store"
-                id="superstore"
-                value="superstore"
-              />
-              <label for="safeway">Safeway</label>
-              <input type="radio" name="store" id="safeway" value="safeway" />
+            <label for="store"
+              >Select which store you'd like me to go to.</label
+            >
+            <label for="walmart">Walmart</label>
+            <input type="radio" name="store" id="walmart" value="walmart" />
+            <label for="sobeys">Sobeys</label>
+            <input type="radio" name="store" id="sobeys" value="sobeys" />
+            <label for="superstore">Superstore</label>
+            <input
+              type="radio"
+              name="store"
+              id="superstore"
+              value="superstore"
+            />
+            <label for="safeway">Safeway</label>
+            <input type="radio" name="store" id="safeway" value="safeway" />
 
-              <br />
+            <br />
 
-              <label for="essential-grocery-items"
-                >Select which of the followign essential grocery items you
-                need.</label
-              >
-              <label for="milk">Milk</label>
-              <input type="checkbox" name="milk" id="milk" value="Milk" />
-              <label for="eggs">Eggs</label>
-              <input type="checkbox" name="eggs" id="eggs" value="Eggs" />
-              <label for="butter">Butter</label>
-              <input type="checkbox" name="butter" id="butter" value="Butter" />
-            </fieldset>
+            <label for="essential-grocery-items"
+              >Select which of the followign essential grocery items you
+              need.</label
+            >
+            <label for="milk">Milk</label>
+            <input type="checkbox" name="milk" id="milk" value="Milk" />
+            <label for="eggs">Eggs</label>
+            <input type="checkbox" name="eggs" id="eggs" value="Eggs" />
+            <label for="butter">Butter</label>
+            <input type="checkbox" name="butter" id="butter" value="Butter" />
+          </fieldset>
 
-            <input type="submit" />
-          </form>
-        </article>
+          <input type="submit" />
+        </form>
       </section>
     </main>
-    <hr />
     <footer>
       <p>&copy;Hamza Corporation</p>
     </footer>
